@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Bed Management</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 36px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px #888;
+      background-color: #57BBE4;
+      padding: 20px;
+    }
+
+    .menu {
+      margin: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-family: 'Arial', sans-serif; color: #333; font-size: 36px; text-transform: uppercase; text-shadow: 2px 2px 4px #888; background-color: #57BBE4; padding: 10px;">Hospital Bed Management</h1>
+
+  <hr>
+  <h1>Welcome to Hospital Bed Management System!</h1>
+  <div class="menu">
+    <button id="admissionButton" class="admission-button">Patient Admission</button>
+  </div>
+
+  <div id="admissionForm" style="display: none;">
+    <hr>
+    <h2>Patient Admission</h2>
+    <form id="patientForm">
+      <label for="patientName">Name:</label>
+      <input type="text" id="patientName" required>
+
+      <label for="patientNRIC">NRIC/Passport:</label>
+      <input type="text" id="patientNRIC" required>
+
+      <label for="patientGender">Gender:</label>
+      <select id="patientGender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="patientDOB">Date of Birth:</label>
+      <input type="date" id="patientDOB" required>
+
+      <label for="patientAge">Age:</label>
+      <input type="number" id="patientAge" required>
+
+      <label for="patientAddress">Address:</label>
+      <textarea id="patientAddress" required></textarea>
+
+      <label for="patientCategory">Category:</label>
+      <select id="patientCategory" required>
+        <option value="ICU">Intensive Care</option>
+        <option value="ID">Infectious Disease</option>
+        <option value="General">General Care</option>
+      </select>
+
+      <button id="admissionButton1" class="admit-button">Admit Patient</button>
+
+    </form>
+  </div>
+
+  <div id="dashboard" style="display: none;">
+    <hr>
+    <h2 class="dashboard-header">Bed Dashboard</h2>
+    <hr>
+    <button id="backToAdmissionButton" class="professional-button left-button" onclick="backToAdmission()">Back to Admission</button>
+    <br>
+    <br>
+    <hr>
+
+
+    <div class="ward">
+      <h3>Intensive Care Ward</h3>
+      <div class="beds" id="icuBeds"></div>
+    </div>
+    <div class="ward">
+      <h3>Infectious Disease Ward</h3>
+      <div class="beds" id="idBeds"></div>
+    </div>
+    <div class="ward">
+      <h3>General Ward</h3>
+      <div class="beds" id="generalBeds"></div>
+    </div>
+  </div>
+
+  <p id="bedDisplay"></p>
+
+  <script src="app.js"></script>
+</body>
+
+<footer>
+     &copy; 2023 Hospital Bed Management System. All rights reserved.
+</footer>
+</html>
+

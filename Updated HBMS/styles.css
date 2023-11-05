@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .menu {
+    margin: 20px;
+  }
+  
+  .admission-button {
+    background-color: #4CAF50; /* Green color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  #admissionForm {
+    margin: 20px;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .admit-button {
+    background-color: #4CAF50; /* Green color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 10px; /* Center horizontally and add margin for vertical positioning */
+  }
+  
+  
+  #dashboard {
+    display: none;
+    margin: 20px;
+  }
+
+  .professional-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .professional-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+
+  .left-button {
+    float: left;
+  }
+  
+  /* Style the Bed Dashboard header */
+  .dashboard-header {
+    color: #333;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #888;
+    background-color: #57BBE4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  
+  .ward {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .ward h3 {
+    color: #555;
+  }
+  
+  .beds {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 beds per row */
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bed {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .bed.free {
+    background-color: #57BBE4; /* Green for free beds */
+  }
+  
+  .bed.admitted {
+    background-color: #FF6B6B; /* Red for admitted beds */
+  }
+  
+  .bed.occupied {
+    background-color: #FFA500; /* Yellow for occupied beds */
+  }
+
+  button#admissionButton {
+    margin-top: 20px;
+}
+
+form#admissionForm {
+    display: none;
+    margin-top: 20px;
+}
+
+form label, form select, form input[type="submit"] {
+    font-size: 16px;
+}
+
+.green-button {
+    background-color: #4CAF50; /* Green color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Additional styles for showing patient admission details */
+#bedDisplay {
+  font-weight: bold;
+  margin-top: 20px;
+}
+  
